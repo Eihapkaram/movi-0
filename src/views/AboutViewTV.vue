@@ -110,6 +110,7 @@
   align-self: flex-start;
   width: 18rem;
   height: 400px;
+  z-index: 5;
 }
 #conphot {
   align-self: flex-end;
