@@ -11,7 +11,6 @@
       clickable: true,
     }"
     :navigation="true"
-    :loop="true"
     :modules="modules"
     class="mySwiper"
   >
