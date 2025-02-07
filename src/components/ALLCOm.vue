@@ -31,6 +31,7 @@
       :spaceBetween="80"
       :modules="modules"
       :navigation="true"
+      :loop="true"
       class="mySwiper"
     >
       <swiper-slide id="swip" v-for="film in this.ALL" :key="film.id"
