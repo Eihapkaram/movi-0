@@ -2,16 +2,16 @@
   <swiper
     :spaceBetween="30"
     :slides-per-view="1"
-    :centeredSlides="true"
+    :centeredSlides="false"
     :autoplay="{
       delay: 6000,
-      disableOnInteraction: true,
     }"
     :pagination="{
       clickable: true,
     }"
     :navigation="true"
     :modules="modules"
+    :loop="true"
     class="mySwiper"
   >
     <swiper-slide v-for="film in this.st.results" :key="film.id"
