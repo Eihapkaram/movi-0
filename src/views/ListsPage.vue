@@ -156,7 +156,7 @@ swiper-slide #item {
   align-items: center;
   gap: 30px;
   width: 100%;
-  height: 100%;
+  height: 50rem;
 }
 #swip {
   text-align: center;
