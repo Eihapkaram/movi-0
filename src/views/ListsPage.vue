@@ -9,6 +9,9 @@
   </div>
   <hr />
   <div id="coon">
+    <h4 v-if="this.list.length == 0">
+      You have not saved items in the Watch Later list
+    </h4>
     <swiper-slide id="swip" v-for="film in this.list" :key="film.id"
       ><img id="item" :src="sr + '/' + film.poster_path" />
       <div id="popup">
