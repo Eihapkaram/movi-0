@@ -19,16 +19,14 @@
           <label for="lin2"><a href="#BestMoves">Movies</a></label>
         </li>
         <li id="lin3">
-          <img style="width: 30px" src="../assets/tv-show.png" />
+          <img style="width: 30px" src="../assets/icons8-tv-100.png" />
           <label for="lin3"><a href="#BestTV">series</a></label>
         </li>
         <li id="lin3">
-          <img style="width: 30px" src="../assets/honor.png" />
-          <label for="lin3"
-            ><router-link :to="{ name: 'listpage' }"
-              >Watch list</router-link
-            ></label
-          >
+          <img style="width: 30px" src="../assets/fav1.png" />
+          <label for="lin3">
+            <router-link :to="{ name: 'listpage' }">Watch list</router-link>
+          </label>
         </li>
       </ul>
     </div>
@@ -49,6 +47,7 @@
   top: 8px;
   border-radius: 5px;
 }
+
 #mune {
   width: 300px;
   height: 100rem;
@@ -60,18 +59,22 @@
   margin: 0px;
   padding: 0px;
 }
+
 a {
   padding-inline: 30%;
   text-decoration: none;
 }
+
 label {
   width: 100%;
   cursor: pointer;
 }
+
 #con {
   position: relative;
   text-align: center;
 }
+
 #con ul {
   position: relative;
   list-style-type: none;
@@ -80,6 +83,7 @@ label {
   left: -20px;
   text-decoration-style: none;
 }
+
 #con ul li {
   position: relative;
   padding: 12px;
@@ -88,14 +92,9 @@ label {
   list-style-type: none;
   text-decoration-style: none;
 }
+
 #con ul li:hover {
   background-color: rgb(83, 96, 104);
-}
-#top {
-}
-#mid {
-}
-#bottom {
 }
 #btn div {
   width: 50px;
@@ -106,22 +105,28 @@ label {
   padding: 2px;
   transition: all, 2s;
 }
+
 .hovtop {
   -webkit-transform: rotate(-10deg);
 }
+
 .hovbottom {
   -webkit-transform: rotate(10deg);
 }
+
 .nothove {
   -webkit-transform: rotate(0deg);
 }
+
 .crosstop {
   -webkit-transform: rotate(-70deg);
   transform: rotate(-70deg);
 }
+
 .crossmid {
   opacity: 0.1;
 }
+
 .crossbottom {
   -webkit-transform: translateY(-20px);
   transform: translateY(-20px);
@@ -131,13 +136,16 @@ label {
   -webkit-transform: rotate(-0deg);
   transform: rotate(-0deg);
 }
+
 .crossmid2 {
   opacity: 1;
 }
+
 .crossbottom2 {
   -webkit-transform: translateY(-0px);
   transform: translateY(-0px);
 }
+
 /*/mobile/*/
 @media (max-width: 500px) {
   #btn {
