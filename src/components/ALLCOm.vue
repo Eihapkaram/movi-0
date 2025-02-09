@@ -22,15 +22,16 @@
       :scrollbar="{
         hide: true,
       }"
-      :centeredSlides="true"
+      :centeredSlides="false"
       :autoplay="{
         delay: 2500,
-        disableOnInteraction: true,
+        disableOnInteraction: false,
       }"
       :slides-per-view="3"
       :spaceBetween="80"
       :modules="modules"
       :navigation="true"
+      :loop="true"
       class="mySwiper"
     >
       <swiper-slide id="swip" v-for="film in this.ALL" :key="film.id"
@@ -326,28 +327,28 @@ export default {
 /*/tablet/*/
 @media (max-width: 1366px) {
   .swiper-slide #item {
-    margin-left: -60rem;
+    margin-left: -1rem;
   }
   .popupp {
-    margin-left: -60rem;
+    margin-left: -1rem;
   }
 }
 /*/tablet/*/
 @media (max-width: 991px) {
   .swiper-slide #item {
-    margin-left: -500px;
+    margin-left: -100px;
   }
   .popupp {
-    margin-left: -500px;
+    margin-left: -100px;
   }
 }
 /*/mobile/*/
 @media (max-width: 500px) {
   .swiper-slide #item {
-    margin-left: -220px;
+    margin-left: -120px;
   }
   .popupp {
-    margin-left: -220px;
+    margin-left: -120px;
   }
 }
 </style>
