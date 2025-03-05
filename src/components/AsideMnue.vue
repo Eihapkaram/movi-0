@@ -12,21 +12,29 @@
       <ul>
         <li id="lin">
           <img style="width: 30px" src="../assets/trending.png" />
-          <label for="lin"><a href="#AllSction">Trending</a></label>
+          <label for="lin"
+            ><router-link to="/SHowAll">Trending</router-link></label
+          >
         </li>
         <li id="lin2">
           <img style="width: 30px" src="../assets/video-player.png" />
-          <label for="lin2"><a href="#BestMoves">Movies</a></label>
+          <label for="lin2"
+            ><router-link to="/WatchAllmov">Movies</router-link></label
+          >
         </li>
         <li id="lin3">
           <img style="width: 30px" src="../assets/icons8-tv-100.png" />
-          <label for="lin3"><a href="#BestTV">series</a></label>
+          <label for="lin3"
+            ><router-link to="/WatchAllTV">series</router-link></label
+          >
         </li>
         <li id="lin3">
           <img style="width: 30px" src="../assets/fav1.png" />
-          <label for="lin3">
-            <router-link :to="{ name: 'listpage' }">Watch list</router-link>
-          </label>
+          <label for="lin3"
+            ><router-link :to="{ name: 'listpage' }"
+              >Watch list</router-link
+            ></label
+          >
         </li>
       </ul>
     </div>
@@ -96,6 +104,16 @@ label {
 #con ul li:hover {
   background-color: rgb(83, 96, 104);
 }
+
+#top {
+}
+
+#mid {
+}
+
+#bottom {
+}
+
 #btn div {
   width: 50px;
   height: 5px;
