@@ -4,7 +4,9 @@
       <div id="conphot">
         <img id="photo" :src="st + '/' + this.move.poster_path" />
         <div id="nam">
-          <h4>{{ this.move.original_name }}</h4>
+          <h4 style="display: flex; flex-flow: row, wrap; width: fit-content">
+            {{ this.move.original_name }}
+          </h4>
           <span class="fa fa-star checked"></span> {{ this.move.vote_average }}
         </div>
       </div>
@@ -21,10 +23,9 @@
       <div class="row" id="filminform">
         <div class="col-lg-6 col-md-4">
           <h2 id="informheader">
-            : تفاصيل المسلسل
+            : تفاصيل
             <img style="width: 30px" src="../assets/quotation.png" />
           </h2>
-          <hr />
           <div class="col-lg-6 col-md-6">
             <ul id="listprant">
               <li>
@@ -82,7 +83,7 @@
       </div>
       <hr />
       <h2>
-        : تنزيل الحلقات
+        : مشاهدت الحلقات
         <img style="width: 30px" src="../assets/quotation.png" />
       </h2>
       <h3>: متعدد الجودة</h3>
@@ -110,7 +111,6 @@
   align-self: flex-start;
   width: 18rem;
   height: 400px;
-  z-index: 5;
 }
 #conphot {
   align-self: flex-end;
@@ -196,7 +196,7 @@ h2 {
 }
 #informheader {
   position: relative;
-  left: 150px;
+  left: 200px;
   color: #fff9f9;
 }
 @media (max-width: 1366px) {
@@ -237,8 +237,8 @@ h2 {
   }
   /* header in ditilze contener */
   #informheader {
-    left: 280px;
-    width: 230px;
+    left: 350px;
+    width: fit-content;
   }
   #terial {
     width: 100%;
@@ -278,8 +278,8 @@ h2 {
   /* header in ditilze contener */
   #informheader {
     align-self: flex-start;
-    left: 170px;
-    width: 200px;
+    left: 280px;
+    width: fit-content;
   }
   #terial {
     width: 100%;
@@ -308,6 +308,7 @@ export default {
     ...mapActions(mystore, ["dogetTV", "getTrialmovie", "getTrialTv"]),
   },
   async mounted() {
+    await this.dogetTV(this.$route.params.filmid);
     this.sr = this.$route.query.imgsrc;
     this.p = this.$route.query.discrptione;
     this.nam = this.$route.query.name;
@@ -316,7 +317,7 @@ export default {
     this.ld();
     //for send params to fun
     //await this.doget(this.$route.params.filmid);
-    await this.dogetTV(this.$route.params.filmid);
+
     // await this.getTrialmovie(this.$route.params.filmid);
     // await this.getTrialTv(this.$route.params.filmid),
     this.move = this.singelTV;
