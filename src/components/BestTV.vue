@@ -1,7 +1,9 @@
 <template>
   <div class="contianer-fliud" id="BestTV">
     <header id="head">
-      <h3>series <img style="width: 30px" src="../assets/quotation.png" /></h3>
+      <h3>
+        series&prog <img style="width: 30px" src="../assets/quotation.png" />
+      </h3>
       <div
         class="progress"
         role="progressbar"
